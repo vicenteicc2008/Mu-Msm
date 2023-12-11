@@ -16,33 +16,18 @@
 #
 ################################################################################
 [Defines]
-  PLATFORM_NAME                  = <Device Codename>
-  PLATFORM_GUID                  = <GUID>
+  PLATFORM_NAME                  = s3ve3g
+  PLATFORM_GUID                  = 630d1379-7d3f-4511-a6f9-578abbc07518
   PLATFORM_VERSION               = 0.1
   DSC_SPECIFICATION              = 0x00010005
-  OUTPUT_DIRECTORY               = Build/<Device Codename>Pkg-$(ARCH)
-  SUPPORTED_ARCHITECTURES        = AARCH64
+  OUTPUT_DIRECTORY               = Build/s3ve3gPkg-$(ARCH)
+  SUPPORTED_ARCHITECTURES        = ARM
   BUILD_TARGETS                  = DEBUG|RELEASE
   SKUID_IDENTIFIER               = DEFAULT
-  FLASH_DEFINITION               = <Device Codename>Pkg/<Device Codename>.fdf
-  # Set this to 1 if your Device has a RGB Display (Newer Devices have BGR instead of RGB)
-  DISPLAY_USES_RGBA              = 0
-  USE_DISPLAYDXE                 = 0
-  # Set this to 1 If your Device is A/B Device
-  AB_SLOT_SUPPORT                = 0
-  USE_UART                       = 0
-
-  # If your SoC has multimple variants define the Number here
-  # If not don't add this Define
-  SOC_TYPE                       = 2
-
-# If your SoC has multimple variants keep this Build Option
-# If not don't add "-DSOC_TYPE=$(SOC_TYPE)" to the Build Options.
-[BuildOptions.common]
-  *_*_*_CC_FLAGS = -DSOC_TYPE=$(SOC_TYPE) -DDISPLAY_USES_RGBA=$(DISPLAY_USES_RGBA)
+  FLASH_DEFINITION               = s3ve3gPkg/s3ve3gPkg.fdf
 
 [LibraryClasses.common]
-  PlatformMemoryMapLib|<Device Codename>Pkg/Library/PlatformMemoryMapLib/PlatformMemoryMapLib.inf
+  PlatformMemoryMapLib|s3ve3gPkg/Library/PlatformMemoryMapLib/PlatformMemoryMapLib.inf
 
 [PcdsFixedAtBuild.common]
   gArmTokenSpaceGuid.PcdSystemMemoryBase|0x00000000    # Starting address
@@ -50,10 +35,10 @@
 
   gEfiMdeModulePkgTokenSpaceGuid.PcdFirmwareVendor|L"vice2008"
 
-  gArmTokenSpaceGuid.PcdCpuVectorBaseAddress|<CPU Vector Base Address>
+  gArmTokenSpaceGuid.PcdCpuVectorBaseAddress|0x00C40000
 
-  gEmbeddedTokenSpaceGuid.PcdPrePiStackBase|<UEFI Stack Base Address>
-  gEmbeddedTokenSpaceGuid.PcdPrePiStackSize|<UEFI Stack Size>
+  gEmbeddedTokenSpaceGuid.PcdPrePiStackBase|0x00C00000
+  gEmbeddedTokenSpaceGuid.PcdPrePiStackSize|0x00040000
 
   # SmBios
   gQcomPkgTokenSpaceGuid.PcdSmbiosSystemVendor|"Samsung"
