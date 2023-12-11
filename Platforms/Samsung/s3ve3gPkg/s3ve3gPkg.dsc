@@ -31,7 +31,7 @@
 
 [PcdsFixedAtBuild.common]
   gArmTokenSpaceGuid.PcdSystemMemoryBase|0x00000000    # Starting address
-  gArmTokenSpaceGuid.PcdSystemMemorySize|0x60000000    # <RAM Size> GB Size
+  gArmTokenSpaceGuid.PcdSystemMemorySize|0x60000000    # 1.5 GB Size
 
   gEfiMdeModulePkgTokenSpaceGuid.PcdFirmwareVendor|L"vice2008"
 
