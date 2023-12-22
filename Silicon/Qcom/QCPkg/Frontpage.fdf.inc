@@ -15,7 +15,7 @@
 
   INF MsCorePkg/AcpiRGRT/AcpiRgrt.inf
 
-  INF QCPkg/Applications/DfciMenu/DfciMenu.inf
+  INF QCPkg/DfciMenu/DfciMenu.inf
 
   FILE FREEFORM = PCD(gOemPkgTokenSpaceGuid.PcdLogoFile) {
     SECTION RAW = QCPkg/Resources/BootLogo.bmp
