@@ -101,7 +101,7 @@ READ_LOCK_STATUS   = TRUE
 
   # TODO: Make this Image for every single Device
   FILE FREEFORM = PCD(gMsCorePkgTokenSpaceGuid.PcdRegulatoryGraphicFileGuid) {
-    SECTION RAW = QCPkg/Include/Resources/RegulatoryLogos.png
+    SECTION RAW = QCPkg/Resources/RegulatoryLogos.png
   }
 
   INF QCPkg/Drivers/GpioButtons/GpioButtons.inf
