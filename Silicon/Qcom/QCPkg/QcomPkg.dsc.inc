@@ -274,7 +274,7 @@
 
   FmpAuthenticationLib|SecurityPkg/Library/FmpAuthenticationLibPkcs7/FmpAuthenticationLibPkcs7.inf
 
-  MemoryMapHelperLib|QcomPkg/Library/MemoryMapHelperLib/MemoryMapHelperLib.inf
+  MemoryMapHelperLib|QCPkg/Library/MemoryMapHelperLib/MemoryMapHelperLib.inf
 
 
 [LibraryClasses.common.DXE_CORE]
