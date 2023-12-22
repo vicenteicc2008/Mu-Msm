@@ -42,6 +42,5 @@
   ResetSystemLib|ArmPkg/Library/ArmSmcPsciResetSystemLib/ArmSmcPsciResetSystemLib.inf
 
 [Components.common]
-  Msm8226Pkg/Drivers/SmBiosTableDxe/SmBiosTableDxe.inf
 
 !include QCPkg/QcomPkg.dsc.inc
