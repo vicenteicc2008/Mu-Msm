@@ -62,4 +62,4 @@
   gEfiMdeModulePkgTokenSpaceGuid.PcdConOutColumn|37
   gEfiMdeModulePkgTokenSpaceGuid.PcdConOutRow|160
 
-!include Msm8226Pkg/Msm8226Pkg.dsc.inc
+!include Msm8226Pkg/Msm8226.dsc.inc
