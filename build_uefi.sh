@@ -53,9 +53,9 @@ case "${TARGET_BUILD_MODE}" in
 esac
 
 # Include Device Config if it exists
-if [ -f "configs/${TARGET_DEVICE}.conf" ]
-then source "configs/${TARGET_DEVICE}.conf"
-else _error "\nDevice configuration not found!\nCheck if your .conf File is in the 'configs' Folder\n"
+if [ -f "config/${TARGET_DEVICE}.conf" ]
+then source "config/${TARGET_DEVICE}.conf"
+else _error "\nDevice configuration not found!\nCheck if your .conf File is in the 'config' Folder\n"
 fi
 
 # Check if Device has more that one Static RAM Size
@@ -88,7 +88,7 @@ stuart_update -c "Platforms/${TARGET_DEVICE_VENDOR}/${TARGET_DEVICE}Pkg/Platform
 stuart_build -c "Platforms/${TARGET_DEVICE_VENDOR}/${TARGET_DEVICE}Pkg/PlatformBuild.py" "TOOL_CHAIN_TAG=${TOOL_CHAIN_TAG}" "TARGET=${_TARGET_BUILD_MODE}" "RAM_SIZE=${TARGET_RAM_SIZE}" "FD_BASE=${TARGET_FD_BASE}" "FD_SIZE=${TARGET_FD_SIZE}" "FD_BLOCKS=${TARGET_FD_BLOCKS}"||_error "\nFailed to Compile UEFI!\n"
 
 # Execute Device Specific Boot Image Creation
-if [ -f "configs/${TARGET_DEVICE}.sh" ]
+if [ -f "config/${TARGET_DEVICE}.sh" ]
 then source configs/${TARGET_DEVICE}.sh
 else _warn "\nImage Creation Script of ${TARGET_DEVICE} has not been Found!\nNo Boot Image Was Generated.\n"
 fi
