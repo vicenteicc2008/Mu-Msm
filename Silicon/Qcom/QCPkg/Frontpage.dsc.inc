@@ -226,12 +226,6 @@
 
   gOemPkgTokenSpaceGuid.PcdPostBackgroundColor|0x0
 
-[Components.AARCH64]
-  #
-  # Library to support Remote/IT/Admin Settings such as DFCI
-  #
-  MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe.inf
-
 [Components.common]
   #
   # Spoofs button press to automatically boot to FrontPage.

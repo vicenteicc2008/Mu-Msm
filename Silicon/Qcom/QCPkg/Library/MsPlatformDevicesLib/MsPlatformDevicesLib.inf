@@ -34,4 +34,3 @@
   IoLib
   UefiBootServicesTableLib
   UefiLib
-  AcpiPlatformUpdateLib

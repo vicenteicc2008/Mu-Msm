@@ -10,7 +10,6 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 #include <Protocol/DevicePath.h>
 
-#include <Library/AcpiPlatformUpdateLib.h>
 #include <Library/BaseMemoryLib.h>
 #include <Library/DebugLib.h>
 #include <Library/DeviceBootManagerLib.h>
@@ -92,9 +91,6 @@ EFI_DEVICE_PATH_PROTOCOL **EFIAPI GetPlatformConnectList(VOID)
       0xfc8d,
       0x4e44,
       {0x8c, 0x78, 0x9c, 0x9e, 0x5b, 0x53, 0xd, 0x36}};
-
-  // Update the ACPI tables with SOC runtime information
-  PlatformUpdateAcpiTables();
 
   // Notify the USB controller to start now
   Status = gBS->CreateEventEx(
