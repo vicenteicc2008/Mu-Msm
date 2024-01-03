@@ -108,9 +108,6 @@ PrePiMain (
      ((UINT64)(UefiFd.Address + UefiFd.Length) <= (UINT64)mSystemMemoryEnd))
     );
 
-  // Initialize the architecture specific bits
-  ArchInitialize ();
-
   ArmEnableVFP ();
 
   // Initialize the Debug Agent for Source Level Debugging

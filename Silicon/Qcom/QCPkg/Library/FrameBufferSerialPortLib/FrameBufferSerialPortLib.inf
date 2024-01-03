@@ -25,7 +25,7 @@
   TimerLib
 
 [Pcd]
-  gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferWidth
-  gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferHeight
-  gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferPixelBpp
-  gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferDelay
+  gQCPkgTokenSpaceGuid.PcdMipiFrameBufferWidth
+  gQCPkgTokenSpaceGuid.PcdMipiFrameBufferHeight
+  gQCPkgTokenSpaceGuid.PcdMipiFrameBufferPixelBpp
+  gQCPkgTokenSpaceGuid.PcdMipiFrameBufferDelay

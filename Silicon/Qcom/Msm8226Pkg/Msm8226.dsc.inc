@@ -14,7 +14,7 @@
   USE_PHYSICAL_TIMER = 0
 
 [BuildOptions.common]
-  *_*_ARM_CC_FLAGS = -march=armv7-a+crypto+rcpc
+  *_*_ARM_CC_FLAGS = -march=armv7-a
 
 [PcdsFixedAtBuild.common]
   gArmTokenSpaceGuid.PcdArmArchTimerFreqInHz|19200000
@@ -29,8 +29,8 @@
   gEfiMdeModulePkgTokenSpaceGuid.PcdAcpiDefaultOemRevision|0x00008226
   gEmbeddedTokenSpaceGuid.PcdInterruptBaseAddress|0xf9000000
 
-  gQcomPkgTokenSpaceGuid.PcdSmbiosProcessorModel|"Snapdragon (TM) 400 @ 1.40 GHz"
-  gQcomPkgTokenSpaceGuid.PcdSmbiosProcessorRetailModel|"MSM8226"
+  gQCPkgTokenSpaceGuid.PcdSmbiosProcessorModel|"Snapdragon (TM) 400 @ 1.40 GHz"
+  gQCPkgTokenSpaceGuid.PcdSmbiosProcessorRetailModel|"MSM8226"
 
   gArmPlatformTokenSpaceGuid.PcdCoreCount|4
   gArmPlatformTokenSpaceGuid.PcdClusterCount|1

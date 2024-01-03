@@ -42,4 +42,4 @@
   gOemPkgTokenSpaceGuid.PcdLowBatteryFile
   gOemPkgTokenSpaceGuid.PcdThermalFile
   gOemPkgTokenSpaceGuid.PcdPostBackgroundColor
-  gQcomPkgTokenSpaceGuid.PcdNoBootOSFile
+  gQCPkgTokenSpaceGuid.PcdNoBootOSFile

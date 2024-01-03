@@ -43,10 +43,10 @@
   gArmTokenSpaceGuid.PcdArmPrimaryCoreMask
   gArmTokenSpaceGuid.PcdArmPrimaryCore
   gArmTokenSpaceGuid.PcdFdSize
-  gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferWidth
-  gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferHeight
-  gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferPixelBpp
-  gQcomPkgTokenSpaceGuid.PcdSmbiosSystemModel
+  gQCPkgTokenSpaceGuid.PcdMipiFrameBufferWidth
+  gQCPkgTokenSpaceGuid.PcdMipiFrameBufferHeight
+  gQCPkgTokenSpaceGuid.PcdMipiFrameBufferPixelBpp
+  gQCPkgTokenSpaceGuid.PcdSmbiosSystemModel
 
 [Ppis]
   gArmMpCoreInfoPpiGuid

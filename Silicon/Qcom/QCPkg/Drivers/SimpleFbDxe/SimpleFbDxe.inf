@@ -36,8 +36,8 @@
   gEfiCpuArchProtocolGuid
 
 [FixedPcd]
-  gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferWidth
-  gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferHeight
+  gQCPkgTokenSpaceGuid.PcdMipiFrameBufferWidth
+  gQCPkgTokenSpaceGuid.PcdMipiFrameBufferHeight
 
 [Guids]
   gEfiMdeModulePkgTokenSpaceGuid

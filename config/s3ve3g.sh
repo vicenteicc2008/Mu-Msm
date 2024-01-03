@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Build an Android kernel that is actually UEFI disguised as the Kernel
-cat ./BootShim/BootShim.bin "./Build/s3ve3gPkg-ARM/${_TARGET_BUILD_MODE}_CLANG38/FV/S3VE3G_UEFI.fd" > "./Build/s3ve3gPkg-ARM/${_TARGET_BUILD_MODE}_CLANG38/FV/S3VE3G_UEFI.fd-bootshim"||exit 1
+cat ./BootShim/BootShim.bin "./Build/s3ve3gPkg-ARM/${_TARGET_BUILD_MODE}_CLANG38/FV/S3VE3GPKG_UEFI.fd" > "./Build/s3ve3gPkg-ARM/${_TARGET_BUILD_MODE}_CLANG38/FV/S3VE3G_UEFI.fd-bootshim"||exit 1
 gzip -c < "./Build/s3ve3gPkg-ARM/${_TARGET_BUILD_MODE}_CLANG38/FV/S3VE3G_UEFI.fd-bootshim" > "./Build/s3ve3gPkg-ARM/${_TARGET_BUILD_MODE}_CLANG38/FV/S3VE3G_UEFI.fd-bootshim.gz"||exit 1
 cat "./Build/s3ve3gPkg-ARM/${_TARGET_BUILD_MODE}_CLANG38/FV/S3VE3G_UEFI.fd-bootshim.gz" ./ImageResources/s3ve3g.dtb > ./ImageResources/bootpayload.bin||exit 1
 

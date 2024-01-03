@@ -27,7 +27,7 @@
     SECTION UI = "Shell"
   }
 
-  FILE FREEFORM = PCD(gQcomPkgTokenSpaceGuid.PcdNoBootOSFile) {
+  FILE FREEFORM = PCD(gQCPkgTokenSpaceGuid.PcdNoBootOSFile) {
     SECTION RAW = QCPkg/Resources/NoBootOS.bmp
   }
 

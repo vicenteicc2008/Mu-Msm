@@ -41,16 +41,16 @@
   gEmbeddedTokenSpaceGuid.PcdPrePiStackSize|0x00040000
 
   # SmBios
-  gQcomPkgTokenSpaceGuid.PcdSmbiosSystemVendor|"Samsung"
-  gQcomPkgTokenSpaceGuid.PcdSmbiosSystemModel|"Galaxy S3 Neo"
-  gQcomPkgTokenSpaceGuid.PcdSmbiosSystemRetailModel|"s3ve3gds"
-  gQcomPkgTokenSpaceGuid.PcdSmbiosSystemRetailSku|"Galaxy_S3_Neo_s3ve3gds"
-  gQcomPkgTokenSpaceGuid.PcdSmbiosBoardModel|"Galaxy S3 Neo"
+  gQCPkgTokenSpaceGuid.PcdSmbiosSystemVendor|"Samsung"
+  gQCPkgTokenSpaceGuid.PcdSmbiosSystemModel|"Galaxy S3 Neo"
+  gQCPkgTokenSpaceGuid.PcdSmbiosSystemRetailModel|"s3ve3gds"
+  gQCPkgTokenSpaceGuid.PcdSmbiosSystemRetailSku|"Galaxy_S3_Neo_s3ve3gds"
+  gQCPkgTokenSpaceGuid.PcdSmbiosBoardModel|"Galaxy S3 Neo"
 
   # Simple FrameBuffer
-  gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|720
-  gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|1280
-  gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferPixelBpp|32
+  gQCPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|720
+  gQCPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|1280
+  gQCPkgTokenSpaceGuid.PcdMipiFrameBufferPixelBpp|32
 
 [PcdsDynamicDefault.common]
   gEfiMdeModulePkgTokenSpaceGuid.PcdVideoHorizontalResolution|720
